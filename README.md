@@ -2,6 +2,106 @@
 
 A Java-based desktop application for Aadhar KYC (Know Your Customer) verification and document processing. This application provides an intuitive GUI for Aadhar authentication, OTP verification, document search, and PDF export functionality.
 
+**Developed by**: Nitish  
+**Repository**: https://github.com/thenitishmind/Aadhar_Kyc
+
+## Technology Stack & Versions
+
+| Component | Technology | Version |
+|-----------|-----------|---------|
+| **Programming Language** | Java | JDK 11+ (JavaSE-25 LTS Recommended) |
+| **Build Tool** | Gradle | 7.0+ |
+| **GUI Framework** | Java Swing | Built-in (JDK) |
+| **Testing Framework** | JUnit | 4.12+ |
+| **IDE Compatible** | Eclipse, IntelliJ IDEA, VS Code | Latest |
+| **Operating System** | Cross-Platform | Windows, macOS, Linux |
+
+### Key Frameworks & Libraries
+- **Java Swing**: For desktop GUI components
+- **Gradle Build System**: For dependency management and build automation
+- **JUnit**: For unit testing
+- **REST/HTTP Client**: For API communications (included in JDK)
+
+## Project Structure
+
+```
+perfiosandroid/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── org/
+│   │           └── example/
+│   │               ├── Main.java                      ⭐ APPLICATION ENTRY POINT
+│   │               ├── EnhancedMainFrame.java         # Main application window
+│   │               ├── AadharAPIClient.java           # API client for Aadhar services
+│   │               ├── AadharCardPanel.java           # Aadhar card display component
+│   │               ├── AadharData.java                # Data model for Aadhar information
+│   │               ├── AadharDataMasker.java          # Utility for data masking
+│   │               ├── AadharDisplayPanel.java        # Display panel for Aadhar details
+│   │               ├── AadharDownloadPanel.java       # Download/export functionality
+│   │               ├── AadharVerificationPanel.java   # Verification panel
+│   │               ├── CaptchaVerificationPanel.java  # CAPTCHA verification UI
+│   │               ├── DocumentSearchPanel.java       # Document search interface
+│   │               ├── LoginPanel.java                # Login interface
+│   │               ├── OTPVerificationDialog.java     # OTP dialog component
+│   │               ├── OTPVerificationPanel.java      # OTP verification interface
+│   │               ├── PDFExporter.java               # PDF export utility
+│   │               └── Component.java                 # Common component definitions
+│   ├── resources/                                     # Application resources
+│   └── (other source files)
+├── test/
+│   ├── java/
+│   │   └── org/
+│   │       └── example/
+│   │           ├── AadharAPIClientTest.java           # API client tests
+│   │           └── AadharDataTest.java                # Data model tests
+│   └── resources/
+├── build/                                             # Build output directory
+│   ├── classes/java/main/                             # Compiled classes
+│   ├── libs/                                          # Generated JAR file
+│   ├── reports/                                       # Test reports
+│   └── generated/                                     # Generated sources
+├── gradle/                                            # Gradle wrapper
+├── build.gradle.kts                                   # Gradle build configuration
+├── settings.gradle.kts                                # Gradle settings
+├── gradlew                                            # Gradle wrapper script (Linux/Mac)
+├── gradlew.bat                                        # Gradle wrapper script (Windows)
+├── local.properties                                   # Local configuration
+├── README.md                                          # This file
+├── LICENSE                                            # Apache License 2.0
+├── MANIFEST.MF                                        # JAR manifest
+├── Run-AadharKYC.bat                                  # Quick launch script (Windows)
+└── QUICKSTART.txt                                     # Quick start guide
+```
+
+## Which File Runs?
+
+### ⭐ **Main Entry Point**: `Main.java`
+
+The application starts from:
+```
+src/main/java/org/example/Main.java
+```
+
+This file contains the `main()` method that initializes the application and launches the GUI.
+
+### How to Run
+
+**Option 1: Using Gradle (Recommended)**
+```bash
+./gradlew run
+```
+
+**Option 2: Using the Batch Script (Windows)**
+```bash
+Run-AadharKYC.bat
+```
+
+**Option 3: From Compiled JAR**
+```bash
+java -jar build/libs/AadharKYC.jar
+```
+
 ## Features
 
 - **Aadhar Authentication**: Verify and fetch Aadhar card details using API integration
@@ -12,36 +112,6 @@ A Java-based desktop application for Aadhar KYC (Know Your Customer) verificatio
 - **Login Panel**: Secure login interface with credential validation
 - **CAPTCHA Verification**: CAPTCHA-based security verification
 - **Data Masking**: Automatic masking of sensitive Aadhar data for privacy
-
-## Project Structure
-
-```
-src/
-├── main/
-│   ├── java/org/example/
-│   │   ├── Main.java                      # Application entry point
-│   │   ├── EnhancedMainFrame.java         # Main application window
-│   │   ├── AadharAPIClient.java           # API client for Aadhar services
-│   │   ├── AadharCardPanel.java           # Aadhar card display component
-│   │   ├── AadharData.java                # Data model for Aadhar information
-│   │   ├── AadharDataMasker.java          # Utility for data masking
-│   │   ├── AadharDisplayPanel.java        # Display panel for Aadhar details
-│   │   ├── AadharDownloadPanel.java       # Download/export functionality
-│   │   ├── AadharVerificationPanel.java   # Verification panel
-│   │   ├── CaptchaVerificationPanel.java  # CAPTCHA verification UI
-│   │   ├── DocumentSearchPanel.java       # Document search interface
-│   │   ├── LoginPanel.java                # Login interface
-│   │   ├── OTPVerificationDialog.java     # OTP dialog component
-│   │   ├── OTPVerificationPanel.java      # OTP verification interface
-│   │   ├── PDFExporter.java               # PDF export utility
-│   │   └── Component.java                 # Common component definitions
-│   └── resources/                         # Application resources
-└── test/
-    ├── java/org/example/
-    │   ├── AadharAPIClientTest.java       # API client tests
-    │   └── AadharDataTest.java            # Data model tests
-    └── resources/                         # Test resources
-```
 
 ## Prerequisites
 
@@ -185,13 +255,28 @@ See `build.gradle.kts` for complete dependency list.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for complete details.
+
+### License Summary
+- ✅ You may use this software commercially
+- ✅ You may distribute this software
+- ✅ You may modify this software
+- ✅ You may use this software privately
+- ⚠️ You must include a copy of the license
+- ⚠️ You must state significant changes to the code
+- ✋ This software is provided AS-IS with no warranty
+
+Full Apache License 2.0 text is available in the [LICENSE](LICENSE) file included in this repository.
 
 ## Support
 
 For issues, questions, or suggestions:
 - Open an issue on [GitHub Issues](https://github.com/thenitishmind/Aadhar_Kyc/issues)
 - Contact the maintainer
+
+## Author
+
+**Nitish** - Project Developer and Maintainer
 
 ## Version History
 
@@ -206,3 +291,5 @@ For issues, questions, or suggestions:
 ---
 
 **Note**: This application handles sensitive personal information. Ensure proper security measures and compliance with data protection regulations before deployment.
+
+**License**: Apache License 2.0 - See LICENSE file for full text
