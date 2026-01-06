@@ -1,0 +1,93 @@
+================================================================================
+    AADHAR KYC VERIFICATION SYSTEM - QUICK START GUIDE
+    Developed by: Nitish
+    Version: 1.0.0 | Java 25 LTS | January 2026
+================================================================================
+
+📂 PROJECT LOCATION:
+   C:\Users\NITISH\Desktop\android _kyc\perfiosandroid\
+
+🚀 HOW TO RUN THE APPLICATION:
+
+   OPTION 1: Run from Project Directory (Recommended)
+   ─────────────────────────────────────────────────
+   • Double-click: Run-AadharKYC.bat (in project root)
+   • OR run command: java -jar dist/AadharKYC.jar
+
+   OPTION 2: Run from Desktop
+   ──────────────────────────
+   • Double-click: AadharKYC.jar (on Desktop)
+   • Double-click: Run-AadharKYC.bat (on Desktop)
+
+   OPTION 3: Command Line
+   ──────────────────────
+   cd C:\Users\NITISH\Desktop\android _kyc\perfiosandroid\bin\main
+   java org.example.Main
+
+📋 LOGIN CREDENTIALS (Demo):
+   • Username: user
+   • Password: pass123
+
+📚 DOCUMENTATION:
+   • README.md          - Complete project documentation
+   • LICENSE            - MIT License information
+   • MANIFEST.MF        - JAR manifest file
+
+📁 PROJECT STRUCTURE:
+   perfiosandroid/
+   ├── src/              - Source code (Java files)
+   ├── bin/              - Compiled classes
+   ├── dist/             - Executable JAR file
+   ├── gradle/           - Gradle wrapper
+   ├── README.md         - Full documentation
+   ├── LICENSE           - MIT License
+   ├── MANIFEST.MF       - JAR configuration
+   └── Run-AadharKYC.bat - Launch script
+
+🔑 KEY FEATURES:
+   ✓ User Login & Authentication
+   ✓ Aadhar Number Search (12 digits)
+   ✓ OTP Verification (60-second timer)
+   ✓ CAPTCHA Image Verification
+   ✓ Aadhar Card Display (Front & Back)
+   ✓ PDF Download & Export
+   ✓ Secure Logout
+   ✓ Data Masking & Privacy
+
+⚙️ SYSTEM REQUIREMENTS:
+   • Java Runtime: JRE 25 LTS or higher
+   • RAM: Minimum 512 MB
+   • Storage: 100 MB
+   • Screen: 1024x768 or higher
+
+🐛 TROUBLESHOOTING:
+   
+   Problem: "java not found"
+   Solution: Install Java 25 LTS from https://www.oracle.com/java/
+   
+   Problem: JAR won't run
+   Solution: Right-click Run-AadharKYC.bat → Run as Administrator
+   
+   Problem: CAPTCHA not visible
+   Solution: Increase screen resolution or zoom
+   
+   Problem: Application slow
+   Solution: Close other applications, increase Java heap size
+
+📖 VERIFICATION FLOW:
+   Login → Search Aadhar → API Validation → 
+   OTP Verification → CAPTCHA Verification → 
+   View Aadhar Card (Front + Back) → Download PDF → Logout
+
+💾 FILE INFORMATION:
+   • AadharKYC.jar      - ~56 KB executable
+   • Run-AadharKYC.bat  - Batch launcher script
+   • Total Classes      - 20+ compiled Java classes
+   • Build Date         - January 2026
+
+📞 SUPPORT:
+   For issues, check the README.md file or review the troubleshooting section.
+
+================================================================================
+                    Ready to launch! Start with Run-AadharKYC.bat
+================================================================================
